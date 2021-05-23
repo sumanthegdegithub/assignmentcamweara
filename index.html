@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>image uploader</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css"
+         rel = "stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+
+</head>
+	<body class="lighten-1 blue">
+		<div class="row" id="imgdiv">
+			<div class="col s12 m6 l4">
+			</div>
+			<div class="col s12 m6 l4">
+				<center>
+				<img src="http://static1.squarespace.com/static/5898e29c725e25e7132d5a5a/58aa11bc9656ca13c4524c68/58aa11e99656ca13c45253e2/1487540713345/600x400-Image-Placeholder.jpg?format=original" id="img">
+				</center>
+			</div>
+			<div class="col s12 m6 l4">
+			</div>
+		</div>
+		<br><br><br>
+		<div class="container">
+			<center>
+			  <form action="#">
+			    <div class="file-field input-field">
+			      <div class="btn">
+			        <span>Select file</span>
+			        <input type="file" accept="image/png, image/jpeg" id="filePhoto">
+			      </div>
+			      <div class="file-path-wrapper">
+			        <input class="file-path validate" type="text">
+			      </div>
+			    </div> 
+			  </form>
+			  <br>
+			  <h5>Set Brightness</h5>
+			  <br>
+			  <div id = "slider"></div>
+			  <br>
+			  <a class="btn-floating waves-effect waves-light red" id='ipvalue'>50 %</a>			
+			</center>
+		</div>
+		<script
+		  src="https://code.jquery.com/jquery-3.6.0.min.js"
+		  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+		  crossorigin="anonymous">
+		</script>
+
+	      <!-- Compiled and minified JavaScript -->
+	    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+	    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	    <script src="script.js"></script>
+	</body>
+</html>
